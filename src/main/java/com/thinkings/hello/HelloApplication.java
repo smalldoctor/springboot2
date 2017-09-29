@@ -10,15 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages = "com.thinkings.*")
 public class HelloApplication {
 
-    @Autowired
-    public  CustomProperties customProperties;
-	public static void main(String[] args) {
-		SpringApplication.run(HelloApplication.class, args);
-//        testConfig();
-	}
-
-//	public static void testConfig(){
-//        System.out.println("customProperties ----properties.attritbuteA----"
-//                + customProperties.getAttribute());
-//    }
+    public static void main(String[] args) {
+        SpringApplication.run(HelloApplication.class, args);
+    }
 }
